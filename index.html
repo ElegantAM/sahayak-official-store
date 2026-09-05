@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sahayak Official Store — Premium Digital Tools</title>
+<meta name="description" content="Sahayak Official Store — 9 premium digital products. CRM, AI Toolkit, UPSC Notes, Placement Kit, and more. Buy via Instamojo.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0d1117">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--muted:#8b949e;--accent:#58a6ff;--accent2:#1f6feb;--text:#e6edf3;--ok:#3fb950}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
+header{position:sticky;top:0;background:#0d1117cc;backdrop-filter:blur(8px);border-bottom:1px solid #21262d;z-index:10}
+.wrap{max-width:1200px;margin:0 auto;padding:16px 20px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px}
+.brand-logo{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,#1f6feb,#58a6ff);display:grid;place-items:center;font-weight:800;color:#fff}
+.badges{display:flex;gap:8px;flex-wrap:wrap}
+.badge{font-size:12px;color:var(--muted);border:1px solid #30363d;border-radius:999px;padding:4px 10px}
+.hero{display:grid;gap:18px;padding:40px 20px;background:radial-gradient(1200px 400px at 10% -20%,#1f6feb22,transparent), radial-gradient(800px 300px at 90% -10%,#58a6ff22,transparent)}
+.hero h1{font-size:32px;line-height:1.15}
+.hero p{color:var(--muted);max-width:700px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;padding:10px 20px 40px}
+.card{background:var(--card);border:1px solid #21262d;border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px;transition:.2s}
+.card:hover{border-color:#30363d;transform:translateY(-2px)}
+.tag{font-size:11px;color:#a5d6ff;background:#1f6feb22;border:1px solid #1f6feb33;border-radius:6px;padding:2px 8px;align-self:flex-start}
+.card h3{font-size:16px}
+.desc{color:var(--muted);font-size:13px;flex:1}
+.price{display:flex;align-items:center;gap:8px;font-weight:700}
+.price s{color:var(--muted);font-weight:500}
+.btn{display:inline-block;background:var(--accent);color:#0d1117;text-decoration:none;padding:10px 14px;border-radius:8px;font-weight:700;text-align:center}
+.btn:hover{background:#79b8ff}
+.footer{border-top:1px solid #21262d;padding:20px;color:var(--muted);text-align:center}
+.kv{display:flex;gap:12px;flex-wrap:wrap}
+.kv div{background:#0d1117;border:1px solid #21262d;border-radius:8px;padding:8px 12px;font-size:12px;color:var(--muted)}
+.notice{background:#0d1117;border:1px solid #21262d;border-radius:10px;padding:12px 16px;color:var(--muted);font-size:13px;margin:0 20px 30px}
+@media(max-width:640px){.hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+ <div class="brand"><div class="brand-logo">S</div> Sahayak Official Store</div>
+ <div class="badges"><span class="badge">Digital Downloads</span><span class="badge">Instant Access</span><span class="badge">Secure via Instamojo</span></div>
+</div>
+</header>
+
+<section class="hero wrap">
+<h1>Premium Digital Products — Built for Creators, Students & Founders</h1>
+<p>Curated, practical, and ready-to-use tools. Pay once, download instantly. All products hosted securely on Instamojo. Trusted by 1000+ customers across India.</p>
+<div class="kv">
+ <div>✅ Instant Download</div><div>✅ 100% Digital</div><div>✅ Secure Payments</div><div>✅ Lifetime Access</div>
+</div>
+</section>
+
+<div class="notice wrap">All purchases are handled securely via <strong>Instamojo</strong>. After payment, you’ll get instant access/download link on Instamojo.</div>
+
+<section class="grid wrap" id="products">
+<!-- Product cards will be generated -->
+</section>
+
+<footer class="footer">
+<div class="wrap">© 2024 Sahayak Official Store • <a href="https://www.instamojo.com/@alp7963" style="color:#58a6ff;text-decoration:none">Buy on Instamojo @alp7963</a> • Made for GitHub Pages</div>
+</footer>
+
+<script>
+const BUY = "https://www.instamojo.com/@alp7963";
+const products = [
+ {t:"CRM Manager — India (Contacts, Deals & Invoices)", tag:"Business Tool", d:"All-in-One CRM for Indian businesses. Contacts, deal pipeline, GST invoicing, reports & offline JSON backup.", p:"₹499", op:"₹999"},
+ {t:"DFY AI Productivity & Automation Toolkit 2026", tag:"AI Toolkit", d:"Done-for-you AI system: prompts library, Make.com & Zapier blueprints, short-form hooks, 15+ AI tools directory + 7-day roadmap.", p:"₹399", op:"₹799"},
+ {t:"UPSC CSE Ultimate Masterclass Notes (Prelims + Mains)", tag:"Study Pack", d:"High-yield revision modules, NCERT-condensed notes, toppers strategies, current affairs crisp notes for Prelims & Mains.", p:"₹299", op:"₹599"},
+ {t:"Placement Ready 2026 — The Only Kit a Fresher Actually Needs", tag:"Career", d:"Resume mastery, 150+ HR Q&A, quant shortcuts, GD framework, 30-day planner, interview checklist for 2026 placements.", p:"₹149", op:"₹299"},
+ {t:"Aegis-X: Instant Consumer Rights & Grievance Assessment", tag:"Legal Tool", d:"AI-powered consumer grievance analyzer. Instant analysis, actionable legal steps, professional complaint draft in seconds.", p:"₹199", op:"₹399"},
+ {t:"Excel to Invoice Generator (GST Ready)", tag:"Template", d:"Editable Excel invoice generator with auto GST calculations (0/5/12/18%), client database, printable PDF-ready invoices.", p:"₹99", op:"₹199"},
+ {t:"Resume Builder Pro — ATS-Optimized", tag:"Career", d:"20+ ATS-optimized resume templates, cover letter pack, keywords cheatsheet, portfolio tips. Word & Canva compatible.", p:"₹129", op:"₹249"},
+ {t:"100+ ChatGPT Prompts for Side Hustle India", tag:"AI Prompts", d:"100+ copy-paste prompts for freelancing, content, marketing, product ideas, cold email, social media, lead gen tailored for India.", p:"₹79", op:"₹149"},
+ {t:"GST Bill Book Template (Editable Excel)", tag:"Finance", d:"Print-ready GST bill book with auto totals, HSN/SAC, tax summaries, invoice numbering. Works in Excel/Sheets.", p:"₹89", op:"₹179"}
+];
+const grid = document.getElementById('products');
+products.forEach(x=>{
+ const card = document.createElement('div'); card.className='card';
+ card.innerHTML = `<span class="tag">${x.tag}</span><h3>${x.t}</h3><div class="desc">${x.d}</div><div class="price">${x.p} <s>${x.op}</s></div><a class="btn" href="${BUY}" target="_blank" rel="noopener">Buy Now</a>`;
+ grid.appendChild(card);
+});
+if('serviceWorker' in navigator){ navigator.serviceWorker.register('/sahayak-official-store/sw.js'); }
+</script>
+</body>
+</html>
