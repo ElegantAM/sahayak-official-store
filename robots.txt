@@ -1,4 +1,35 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.github.io/sahayak-official-store/sitemap.xml
+Sitemap: https://elegantam.github.io/sahayak-official-store/sitemap.xml
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Bingbot - powers Bing, Yahoo, DuckDuckGo, Ecosia, ChatGPT Search, Edge
+User-agent: Bingbot
+Allow: /
+
+# OpenAI Bots - Required for ChatGPT citations
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Other AI Bots
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Host for IndexNow instant indexing
+Host: https://elegantam.github.io
